@@ -74,6 +74,16 @@ class App extends Component {
     });
   };
 
+  /**
+   * Duplicate task
+   */
+  duplicateTask = index => {
+    this.state.taskList.push(this.state.taskList[index]);
+    this.setState({
+      taskList: this.state.taskList
+    });
+  };
+
   render() {
     this.updateStorageData();
 
@@ -84,7 +94,7 @@ class App extends Component {
           onChange={this.taskTitleChange}
           Model={this.state.newTask}
         />
-        <TodoList List={this.state.taskList} OnChange={this.taskStatusChange} OnDelete={this.deleteTask} />
+        <TodoList List={this.state.taskList} OnChange={this.taskStatusChange} OnDelete={this.deleteTask} OnCopy={this.duplicateTask} />
       </div>
     );
   }
