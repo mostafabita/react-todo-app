@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="128x128" href="%PUBLIC_URL%/favicon.ico">
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -22,11 +25,24 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>To-Do App</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+  <body class="d-flex flex-column h-100">
+    <noscript>You need to enable JavaScript to run this app.</noscript>    
+    <main role="main" class="flex-shrink-0">
+      <div class="container">
+        <h1 class="mt-5">To-Do Application</h1>
+        <p class="lead">
+          <div id="root"></div>
+        </p>
+      </div>
+    </main>
+    
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">To-Do Application Exercise</span>
+      </div>
+    </footer>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
