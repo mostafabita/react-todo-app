@@ -29,7 +29,7 @@ class TodoList extends Component {
               className="close"
               onClick={() => this.props.OnCopy(index)}
             >
-              <span aria-label="duplicate" role="img">✔️</span>
+              <span aria-label="duplicate" role="img">⚡</span>
             </button>
           </div>
         </li>
