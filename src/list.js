@@ -22,7 +22,14 @@ class TodoList extends Component {
               className="close"
               onClick={() => this.props.OnDelete(index)}
             >
-              <span aria-hidden="true">&times;</span>
+              <span aria-label="delete" role="img">🗑️</span>
+            </button>
+            <button
+              type="button"
+              className="close"
+              onClick={() => this.props.OnCopy(index)}
+            >
+              <span aria-label="duplicate" role="img">⚡</span>
             </button>
           </div>
         </li>
